@@ -12,4 +12,4 @@ cscript //nologo ospp.vbs /sethst:%KMS_Sev% >nul
 echo %KMS_Sev% & echo Activating...
 cscript //nologo ospp.vbs /act | find /i "successful" && (echo Complete) || (echo Trying another KMS Server & set /a i+=1 & goto server)
 pause >nul
-exi
+exit
